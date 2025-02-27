@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/images/ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/Styles.css" />
+    <script src="assets/js/Script.js"></script>
+    <script src="assets/particles.min.js"></script>
+    <script>
+      particlesJS.load(
+        "particles-js",
+        "assets/particlesjs-config.json",
+        function () {
+          console.log("Particles.js configuration loaded successfully!");
+        }
+      );
+    </script>
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: gold;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .contact-us {
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .contact-us h1 {
+        color: red;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        background: rgba(255, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .contact-info h2 {
+        color: red;
+        margin-top: 20px;
+      }
+      .contact-info p,
+      .contact-info a {
+        color: gold;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .contact-info a:hover {
+        color: red;
+      }
+      .map {
+        margin-top: 20px;
+      }
+      iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        border-radius: 10px;
+        border: 2px solid gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header class="navbar">
+      <div class="logo">
+        <img
+          id="logooo"
+          src="/assets/images/Cypherix.png"
+          alt="Cypherix Logo"
+        />
+      </div>
+      <div class="hamburger menu-toggle" onclick="toggleMenu()">
+        <img src="/assets/images/thumb.png" alt="" />
+      </div>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/Events.html">Events</a>
+        <a href="/Teams.html">Teams</a>
+        <a href="/about-us.html">About Us</a>
+        <a href="/contact-us.html" class="selected">Contact Us</a>
+      </nav>
+      <nav class="nav-links mobile-menu">
+        <a href="/">Home</a>
+        <a href="/Events.html">Events</a>
+        <a href="/Teams.html">Teams</a>
+        <a href="/about-us.html">About Us</a>
+        <a href="/contact-us.html" class="selected">Contact Us</a>
+      </nav>
+    </header>
+    <div id="separator"></div>
+    <main>
+      <section class="contact-us">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>College Name</h2>
+            <p>New Prince Shri Bhavani College of Engineering and Technology</p>
+            <h2>Phone Numbers</h2>
+            <p>+91 XXXXXXXXXX</p>
+            <p>+91 XXXXXXXXXX</p>
+            <h2>Email IDs</h2>
+            <p>example@college.edu</p>
+            <p>support@college.edu</p>
+            <h2>Instagram</h2>
+            <p>
+              <a
+                href="https://www.instagram.com/cypherix_2k25_/"
+                target="_blank"
+                >@cypherix_2k25_</a
+              >
+            </p>
+          </div>
+          <div class="map">
+            <h2>Find Us Here</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.4889438221175!2d80.1662648!3d12.9146718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ea09cb2abf5%3A0x81ad80cde6aa3fef!2sNew%20Prince%20Shri%20Bhavani%20College%20Of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1709020707000!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 10px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
