@@ -96,8 +96,8 @@
         <div id="poster-section">
           <div id="pos-img">
             <img
-              src="/assets/images/spartanz2k25logo.jpg"
-              alt="Cypherix 2024 Poster"
+              src="/assets/images/spart.png"
+              alt="Cypherix 2025 Poster"
               id="spart"
               style="border-radius: 100%"
             />
@@ -118,7 +118,7 @@
         <section id="count" style="margin-top: 15vh;">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-10">
+              <div style="display: flex;justify-content: center;">
                 <div class="count-wrapper text-center">
                   <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
                     <div id="clock" class="time-count"></div>
@@ -128,36 +128,50 @@
             </div>
           </div>
         </section>
-    
         <section class="welcome">
-          <h2>Welcome to Spartanz 2K25</h2>
-          <p class="tech-des">
+          <div id="ko">
+          <h2 class="row-heading special-heading">Welcome to Spartanz 2K25</h2>
+          </div>
+          <p class="tech-des" >
             Join us for the premier cybersecurity symposium where industry
             leaders, experts, and enthusiasts come together to explore the
             latest trends, challenges, and innovations in cybersecurity.
           </p>
         </section>
-        <div class="tech-des">
-          <h2 class="tech-ha">Technical Events</h2>
-          SPARTANZ Technical Events push your limits in cybersecurity! Crack
-          codes in CTF, design stunning UIs, debug like a pro, test your
-          knowledge in the Technical Quiz, and present groundbreaking ideas.
-          Compete, innovate, and dominate! ⚡<br />
-          <a style="color: blue; text-decoration: underline" href="tech.html"
-            >For More Deatils>>>></a
-          >
+        <div class="team-row" onclick="window.location.href='tech.html';" style="cursor: pointer;">
+          <h2 class="row-heading special-heading">Technical Events</h2>
+          <div class="team-members">
+            <div class="team-container">
+              <div class="team-box-large">
+                <p class="team-name special-heading">Click Me</p>
+                <p class="team-specialization-large">
+                  SPARTANZ Technical Events push your limits in cybersecurity! Crack
+                  codes in CTF, design stunning UIs, debug like a pro, test your
+                  knowledge in the Technical Quiz, and present groundbreaking ideas.
+                  Compete, innovate, and dominate! ⚡<br />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tech-des">
-          <h2 id="non-tech-ha">Non-Technical Events</h2>
-          SPARTANZ Non-Technical Events bring thrill and strategy! Hunt for
+        <div class="team-row" onclick="window.location.href='non-tech.html';" style="cursor: pointer;">
+          <h2 class="row-heading special-heading">Non-Technical Events</h2>
+          <div class="team-members">
+            <div class="team-container">
+              <div class="team-box-large">
+                <p class="team-name special-heading">Click Me</p>
+                <p class="team-specialization-large">
+                  SPARTANZ Non-Technical Events bring thrill and strategy! Hunt for
           clues in Treasure Hunt, act fast in Charades, decode images in
           PictoQuest, challenge your wits in Paradox, escape the unexpected in
           Escape Challenge, and battle it out in Free Fire. Fun, strategy, and
           excitement await! 🔥<br />
-          <a style="color: blue; text-decoration: underline" href="tech.html"
-            >For More Deatils>>>></a
-          >
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </main>
     </div>
     <footer class="cyber-footer">
@@ -266,5 +280,95 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <style>/* Team Row */
+      .team-row {
+        margin: 20px auto;
+        text-align: center;
+        width: 80%;
+        max-width: 1200px;
+      }
+      
+      /* Row Heading */
+      .row-heading {
+        color: #ffd700; /* Gold */
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      
+      /* Special Heading Style */
+      .special-heading {
+        font-family: "Orbitron", sans-serif;
+        font-size: 2.5rem;
+        color: #00ffcc; /* Neon cyan */
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+        margin-bottom: 20px;
+      }
+      
+      /* Team Members Container */
+      .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      /* Team Container */
+      .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+      }
+      
+      /* Large Box for Description */
+      .team-box-large {
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+        padding: 30px;
+        border-radius: 15px;
+        width: 80%; /* Wider box */
+        max-width: 800px; /* Maximum width */
+        color: #ffffff; /* White text */
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Neon glow */
+        backdrop-filter: blur(10px); /* Blurred background */
+        margin: 0 auto; /* Center the box */
+      }
+      
+      /* Team Name */
+      .team-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ffd700; /* Gold */
+      }
+      
+      /* Large Text for Description */
+      .team-specialization-large {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: justify;
+        color: #c0c0c0; /* Light gray for readability */
+      }
+      
+      /* Mobile Responsive Styles */
+      @media (max-width: 768px) {
+        .special-heading {
+          font-size: 2rem; /* Smaller heading for mobile */
+        }
+      
+        .team-box-large {
+          width: 90%; /* Wider box for mobile */
+          padding: 20px; /* Smaller padding for mobile */
+        }
+      
+        .team-specialization-large {
+          font-size: 1rem; /* Smaller font size for mobile */
+          line-height: 1.6; /* Better line spacing for mobile */
+        }
+      }
+      </style>
   </body>
 </html>

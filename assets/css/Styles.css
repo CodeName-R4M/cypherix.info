@@ -187,6 +187,10 @@ body {
   padding-top: 5vh;
   text-align: left;
 }
+#ko{
+  display: flex;
+  justify-content: center;
+}
 .welcome h2 {
   color: beige;
   font-size: 8vh;
@@ -212,6 +216,7 @@ body {
 .tech-des {
   color: beige;
   font-family: "Poppins", sans-serif;
+  font-size: 5vh;
 }
 #event-main {
   margin-top: 20vh;
@@ -576,6 +581,7 @@ body {
   .tech-des {
     color: beige;
     font-family: "Poppins", sans-serif;
+    font-size: 5vw;
   }
   #non-tech-ha {
     font-size: 3.5vh;
@@ -721,9 +727,9 @@ body {
   }
 }
 /* counter section  */
-#count {
+/* #count {
   background: #f6f9f9;
-}
+} */
 
 #count .count-wrapper {
   background-image: linear-gradient(65deg, #d9e224 0, #f04444 100%);
@@ -736,7 +742,7 @@ body {
   top: -40px;
   /* z-index: 2; */
   display: inline-block;
-  width: 100%;
+  width: 80%;
 }
 
 .time-count div {
@@ -746,7 +752,7 @@ body {
 .time-entry {
   display: inline-block;
   margin: 15px 0;
-  width: 24%;
+  width: 22%;
   margin-right: 0;
   border: none;
   position: relative;
@@ -783,7 +789,9 @@ body {
   -ms-transform: translateY(-18%);
   transform: translateY(-18%);
 }
-
+/* .time-entry p{
+  font-size: 12px;
+} */
 .time-entry:first-child {
   border-left: none;
 }
