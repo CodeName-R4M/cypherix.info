@@ -655,11 +655,25 @@ body {
     height: 30vh;
   }
   #tech-he {
-    font-size: 30px; /* Reduce font size */
+    font-size: 40px; /* Reduce font size */
     flex-direction: column; /* Stack text vertically */
     text-align: center;
     gap: 5px;
     margin-top: 20vh;
+  }
+  .tech-wo {
+    color: white;
+    font-size: 10vw;
+    animation: flicker 2s infinite alternate;
+  }
+  .events-wo {
+    color: #00c9a7;
+    font-size: 10vw;
+    animation: flicker 2s infinite alternate-reverse;
+    /* position: relative; */
+  }
+  #ev{
+    font-size: 9vw;
   }
   .non-tech-logo-container {
     margin-top: 0;
