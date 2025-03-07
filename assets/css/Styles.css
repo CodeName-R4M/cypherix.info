@@ -491,10 +491,6 @@ body {
   text-align: left;
 }
 
-body::after {
-  content: "flag{Devel0per_kn0w5_t00_much}";
-  color: black;
-}
 
 .rega {
   display: block;
