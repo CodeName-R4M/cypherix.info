@@ -493,7 +493,7 @@ body {
 
 body::after {
   content: "flag{Devel0per_kn0w5_t00_much}";
-  color: transparent;
+  color: black;
 }
 
 .rega {
